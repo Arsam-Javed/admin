@@ -1,0 +1,45 @@
+<div *ngIf="loaded">
+<div class="row">
+  <div class="col-sm-6">
+    <div class="form-group" [class.has-error]="(data.title == undefined || data.title == '') && submitted">
+      <label for="product_name">Product Name</label>
+      <input type="text" class="form-control" id="product_name" placeholder="Product Name" [(ngModel)]="data.title">
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="form-group" [class.has-error]="file == undefined && submitted">
+      <label for="productpic">Add Photo</label>
+      <ba-file-uploader type="file" id="productpic" (change)="fileChangeEvent($event)"></ba-file-uploader>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="form-group" [class.has-error]="(data.category == undefined || data.category== '') && submitted">
+      <label for="assign_category">Select Category</label>
+      <div ngbDropdown>
+        <input style="color: white;" type="text" class="form-control" id="assign_category" placeholder="Select Type" [(ngModel)]="data.category" readonly ngbDropdownToggle>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item" *ngFor="let category of categories" (click)="categorySelected(category)">{{category.title}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="form-group" [class.has-error]="(data.price == undefined || data.price == '') && submitted">
+      <label for="price">Price</label>
+      <input type="text" class="form-control" id="price" placeholder="Price" [(ngModel)]="data.price">
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="form-group" [class.has-error]="(data.dry == undefined || data.dry== '') && submitted">
+      <label for="assign_category">Dry</label>
+      <div ngbDropdown>
+        <input style="color: white;" type="text" class="form-control" id="dry" placeholder="Select Type" [(ngModel)]="data.type" readonly ngbDropdownToggle>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item" *ngFor="let dry of drytypes" (click)="dryselected(dry)">{{dry.type}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<button type="submit" class="btn btn-primary" (click)="save()" [disabled]="sendingRequest"><i *ngIf="sendingRequest" class="fa fa-spin fa-circle-o-notch"></i> Save</button>
+</div>

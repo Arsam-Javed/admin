@@ -1,0 +1,41 @@
+.loading{
+  opacity: 1;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: #fff;
+  animation: 3s ease 0s normal forwards 1 fadeout;
+}
+.notification {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 75px;
+  width: 300px;
+  text-align: center;
+  background: white;
+  color: blue;
+  margin-bottom: 25px;
+  margin-right: 25px;
+  z-index: 100000;
+  border-radius: 5px;
+}
+.notificationheader {
+  color: #5396cc;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.notificationpara {
+  color: #903636;
+  margin-top: 5px;
+}
+.shownotification {
+  opacity: 1 !important;
+}
+.step {
+  opacity: 0;
+  transition: 1s ease-in-out all;
+}

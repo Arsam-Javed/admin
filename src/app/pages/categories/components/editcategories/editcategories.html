@@ -1,0 +1,18 @@
+<div *ngIf="!loading">
+  <span> Selected Icon </span>
+  <div><img src="{{data.icon}}" height="80" width="80"></div><br>
+  <div class="col-sm-6">
+  <div class="form-group"><br>
+    <label for="subscriptionpic">Update Icon</label>
+    <ba-file-uploader type="file" id="subscriptionpic" (change)="fileChangeEvent($event)"></ba-file-uploader>
+  </div>
+</div><br>
+<div class="col-sm-6">
+  <div class="form-group" [class.has-error]="(data.title == undefined || data.title == '') && submitted">
+    <label for="category_name">Category Name</label>
+    <input type="text" class="form-control" id="category_name" placeholder="Category Name" [(ngModel)]="data.title">
+  </div>
+</div>
+
+<button type="submit" class="btn btn-primary" (click)="save()" [disabled]="sendingRequest"><i *ngIf="sendingRequest" class="fa fa-spin fa-circle-o-notch"></i> Save</button>
+</div>

@@ -1,0 +1,60 @@
+{
+  "login": {
+    "title": "Sign in to Laundream Panel",
+    "email": "Email",
+    "password": "Password",
+    "sign_in": "Sign in",
+    "forgot_password": "Forgot password?",
+    "sign_from_app_text": "or Sign in with one click",
+    "share_on_facebook": "Share on Facebook",
+    "share_on_twitter": "Share on Twitter",
+    "share_on_google_plus": "Share on Google Plus"
+  },
+  "general": {
+    "home": "Home",
+    "forms": {
+      "option1": "Option 1"
+    },
+    "menu": {
+      "dashboard": "Dashboard",
+      "categories": "Categories",
+      "addcategory": "Add Category",
+      "listcategories": "ListCategories",
+      "products": "Products",
+      "addproduct": "Add Product",
+      "orders": "Orders",
+      "listorders": "List Orders",
+      "promo": "Promotions",
+      "startpromo": "Start promotions",
+      "currentpromo": "Current Promotions",
+      "promohistory": "Promotion Histroy",
+      "feedback": "Feedback",
+      "listfeedback": "List Feedback",
+      "riders": "Riders",
+      "addrider": "Add Rider",
+      "listrider": "List Riders",
+      "local": "Local",
+      "localreceiving": "Local Receiving",
+      "localdispatching": "Local Dispatching",
+      "third":"3rd Party",
+      "thirdpartydispatching": "3rd Party Dispatching",
+      "thirdpartyreceiving": "3rd Party Receiving",
+      "finance": "Finance",
+      "deliveredorders": "Orders",
+      "financeget": "Finance",
+      "totalrevenue": "Total Revenue",
+      "communication": "Communication",
+      "notification": "Send Notification",
+      "disputes": "Disputes",
+      "listdisputes": "List Disputes",
+      "viewdispute": "View Disputes",
+      "admin": "Admin",
+      "listadmins": "All Accounts",
+      "clientmessages": "Client Messages",
+      "financestats": "Stats"
+    },
+    "created_with": "Created with"
+  },
+  "dashboard": {
+  }
+}
